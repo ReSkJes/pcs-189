@@ -1,0 +1,8 @@
+git clone github.com/ReSkJes/repository.git
+cd repository
+git checkout --orphan gh-pages
+git rm -rf .
+echo "Test" > index.html
+git add index.html
+git commit -a -m "Testing gh-pages"
+git push origin gh-pages
